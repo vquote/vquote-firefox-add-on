@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "VQuotes",
+  "version": "1.0",
+
+  "description": "",
+  "browser_specific_settings": {
+      "gecko": {
+        "strict_min_version": "34.*",
+        "update_url": "https://raw.githubusercontent.com/vquote/vquote-firefox-add-on/refs/heads/master/updates.json"
+      }
+   }
+
+  "content_scripts": [
+    {
+      "matches": ["*://*youtube.com/watch?v=*"],
+      "js": ["youtube.js"]
+    }
+    
+  ]
+}
+
+
+
